@@ -9,6 +9,9 @@ TreeSet通过比较器进行排序
  */
 public class TreeSetTest2 {
     public static void main(String[] args) {
+        //在创建TreeSet对象时，在构造方法中传入Comparator接口的实现类对象并根据返回值来进行TreeSet的比较器排序
+        //在这里，使用Comparator接口的匿名内部类对象作为参数
+        // 也可以先创建该接口的实现类，重写其compare()方法后创建实现类的对象后再作为参数传入
         TreeSet<Teacher> treeSet = new TreeSet<>(new Comparator<Teacher>() {
             @Override
             public int compare(Teacher o1, Teacher o2) {

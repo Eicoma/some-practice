@@ -1,5 +1,6 @@
 package eicoma.com.github.treeSet.practice;
 
+//这里通过自定义类（标准类）实现Comparable接口，重写其compareTo()方法并根据返回值来进行自然排序
 public class Student implements Comparable<Student>{
     private String name;
     private int age;
