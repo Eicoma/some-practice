@@ -2,6 +2,9 @@ package eicoma.com.github.treeSet.practice;
 
 import java.util.Iterator;
 import java.util.TreeSet;
+/*
+TreeSet的自然排序
+ */
 
 public class TreeSetTest {
     public static void main(String[] args) {
