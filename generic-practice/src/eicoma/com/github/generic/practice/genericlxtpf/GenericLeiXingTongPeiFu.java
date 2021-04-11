@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GenericLeiXingTongPeiFu {
-    //类型通配符
+    //类型通配符的定义
     List<?> list1 = new ArrayList<String>();
     List<?> list2 = new ArrayList<Object>();
     List<?> list3 = new ArrayList<Integer>();
