@@ -75,5 +75,4 @@ public class Student2 implements Comparable<Student2>{
         result = result == 0 ? this.getName().compareTo(o.name) : result;
         return result;
     }
-
 }
