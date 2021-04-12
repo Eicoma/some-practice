@@ -3,7 +3,7 @@ package eicoma.com.github.hashset.practice;
 /**
  * hashset底层为数据 + 链表 + 红黑树的结构
  * hashset初始容量为16，负载因子为0.75，2倍扩容
- * 即在hashset容量在达到16*0.75==12时扩容为2倍
+ * 即在hashset容量在达到16*0.75==12时扩容为2倍,即由16扩容至32
  */
 
 import java.util.HashSet;
