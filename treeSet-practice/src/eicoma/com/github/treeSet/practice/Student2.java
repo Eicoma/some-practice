@@ -64,6 +64,9 @@ public class Student2 implements Comparable<Student2>{
 
     @Override
     public int compareTo(Student2 o) {
+        //TreeSet底层为红黑树的结构
+        //this.为准备添加进TreeSet中的元素，o为已经添加进TreeSet中的元素
+        //调换this.和o的顺序，即可使红黑树的结点添加顺序相反
         int result = this.getSum() - o.getSum();
        //若总成绩相同，则分别去比较math,chinese,english,若都相同则比较name
         result = result == 0 ? this.getMath() - o.math : result;
