@@ -38,6 +38,7 @@ public class Student {
 
     //在使用HashSet这种集合时，需重写hashCode()和equals()方法
     //用于返回元素在HashSet的结构（数组）中的存储的索引
+    //通过重写Student类中的hashCode()和equals()方法后，重复的元素不会再添加到hashset中
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

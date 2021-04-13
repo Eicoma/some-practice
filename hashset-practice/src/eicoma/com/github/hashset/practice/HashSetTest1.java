@@ -22,6 +22,7 @@ public class HashSetTest1 {
         hashSet.add(stu1);
         hashSet.add(stu2);
         hashSet.add(stu3);
+        //此处属性值和stu3相同的stu4不会再添加进hashSet集合中
         hashSet.add(stu4);
 
         //迭代器打印集合元素
