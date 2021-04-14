@@ -33,7 +33,7 @@ public class FileDemo3 {
         for (File file : fileArray){
             if(file.isFile()){
                 String fileName = file.getName();
-                System.out.println(fileName);
+                //System.out.println(fileName);
                 //此处split()的参数为"\\.",
                 // “.”是 转义字符，必须得加"\\";
                 String[] nameArray = fileName.split("\\.");
