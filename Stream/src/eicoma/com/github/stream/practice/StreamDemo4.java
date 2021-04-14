@@ -44,7 +44,8 @@ public class StreamDemo4 {
         list.stream().forEach(s -> System.out.println(s));
 
         System.out.println("=======================");
-//         long count()返回此流中的元素数
+
+//         long count()返回此流中的元素数量
         long n = list.stream().count();
         System.out.println("流中的元素数量为：" + n);
     }
