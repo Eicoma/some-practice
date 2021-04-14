@@ -25,7 +25,15 @@ public class StreamDemo5 {
                 }
         ).forEach(num -> System.out.println(num));
 
+        System.out.println("============================");
         //使用简化的lambda表达式
         list.stream().filter(n -> n % 2 ==0).forEach(n -> System.out.println(n));
+
+        System.out.println("============================");
+        //再将集合list里的内容输出
+        for(Integer i : list){
+            System.out.println(i);
+        }
+        //结论：修改流里的内容并不会影响实际的集合里的数据
     }
 }
