@@ -1,15 +1,16 @@
 package eicoma.com.github.stream.practice;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.Stream;
-
 /**
+ * Stream流中间操作方法
  * Stream<T> limit(long maxSize)返回此流中的元素组成的流，截取前指定参数个数的数据
  * Stream<T> skip(long n)跳过指定参数个数的数据，返回由该流的剩余元素组成的流
  * static <T> Stream<T> concat(Stream a, Stream b)合并a和b两个流为一个流
  * Stream<T> distinct()返回由该流的不同元素（根据Object.equals(Object) ）组成的流
  */
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Stream;
 
 public class StreamDemo3 {
     public static void main(String[] args) {
