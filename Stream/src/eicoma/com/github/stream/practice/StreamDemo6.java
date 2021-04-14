@@ -1,9 +1,6 @@
 package eicoma.com.github.stream.practice;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 
 /**
@@ -49,7 +46,7 @@ public class StreamDemo6 {
 
         System.out.println("==========================");
 
-
+        //public static <T> Collector toSet()把元素收集到Set集合中
         Set<Integer> set1 = list.stream().filter(
                 (Integer integer) -> {
                     return integer % 2 == 0;
@@ -57,16 +54,41 @@ public class StreamDemo6 {
         ).collect(Collectors.toSet());
 
         //简化版
-        Set<Integer> set2 = list.stream().filter(
-                (Integer integer) -> {
-                    return integer % 2 == 0;
-                }
-        ).collect(Collectors.toSet());
+        Set<Integer> set2 = list.stream().filter(integer -> integer % 2 == 0).collect(Collectors.toSet());
 
         //输出Set集合中的内容
         System.out.println(set1);
         System.out.println(set2);
 
         //输出结果显示出了Set集合元素不可重复的特点
+
+        System.out.println("==========================");
+
+        //public static  Collector toMap(Function keyMapper,Function valueMapper)把元素收集到Map集合中
+        List<String> list3 = new ArrayList<>();
+
+        list3.add("唐三,18");
+        list3.add("小舞,17");
+        list3.add("唐昊,48");
+
+        Map<String,String> map = list3.stream().filter(
+                //(String s) -> {}  表示s去遍历流中的每一个数据，并在后面的{}中进行处理
+                (String s) -> {
+                    String[] array = s.split(",");
+                    int i = Integer.parseInt(array[1]);
+                    return i<=18;
+                }
+                //此处要将toMap()方法的参数列表写清楚
+        ).collect(Collectors.toMap(
+                s -> {
+                    return s.split(",")[0];
+                },
+                s -> {
+                    return s.split(",")[1];
+                }
+        ));
+        //输出Map
+        System.out.println(map);
+
     }
 }
