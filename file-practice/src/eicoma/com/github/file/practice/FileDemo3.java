@@ -34,7 +34,8 @@ public class FileDemo3 {
             if(file.isFile()){
                 String fileName = file.getName();
                 System.out.println(fileName);
-                //此处split()的参数为"\\."
+                //此处split()的参数为"\\.",
+                // “.”是 转义字符，必须得加"\\";
                 String[] nameArray = fileName.split("\\.");
                 String endName = nameArray[1];
                 Integer count = map.get(endName);
