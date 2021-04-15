@@ -15,10 +15,12 @@ public class FileInputStreamDemo2 {
         FileOutputStream fos = new FileOutputStream("io-practice\\星轨.mov");
 
         int byt;
+        //该种读取为一次读取一个字节
         while((byt = fis.read()) != -1){
             fos.write(byt);
         }
         fis.close();
         fos.close();
+        //读写速度太慢了
     }
 }
