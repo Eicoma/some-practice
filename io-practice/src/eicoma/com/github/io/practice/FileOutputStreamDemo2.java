@@ -25,7 +25,7 @@ public class FileOutputStreamDemo2 {
         fos.write(101);
 
         // void write(byte[] b)：将字节从指定的字节数组写入此文件输出流
-        //FileOutputStream类下的write()方法只能输出int型数据和字节数组
+        //FileOutputStream类下的write()方法只能接受int型参数和字节数组
         //因此若想要将字符串写入文件输出流，则必须通过getBytes()方法将字符串转化为字节数组
         byte[] bys = "abcde".getBytes();
         fos.write(bys);
