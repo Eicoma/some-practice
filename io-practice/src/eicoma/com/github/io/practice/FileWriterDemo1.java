@@ -1,9 +1,5 @@
 package eicoma.com.github.io.practice;
 
-import java.io.FileOutputStream;
-import java.io.FileWriter;
-import java.io.IOException;
-
 /**
  * FileWriter类的构造方法
  *
@@ -20,6 +16,12 @@ import java.io.IOException;
  * void write(String str)写一个字符串
  * void write(String str, int off, int len)写一个字符串的一部分
  */
+
+
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
+
 
 public class FileWriterDemo1 {
     public static void main(String[] args) throws IOException {
