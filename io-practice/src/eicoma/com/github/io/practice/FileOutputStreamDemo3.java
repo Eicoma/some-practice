@@ -20,6 +20,7 @@ import java.io.IOException;
 
 public class FileOutputStreamDemo3 {
     public static void main(String[] args) throws IOException {
+        //更改默认的boolean参数为true
         FileOutputStream fos = new FileOutputStream("io-practice\\two.txt",true);
 
         fos.write("\r\n".getBytes());
