@@ -16,9 +16,11 @@ import java.io.IOException;
 
 public class BufferedWriterDemo1 {
     public static void main(String[] args) throws IOException {
+        //io-practice表示的是我要写入的这个文件在当前模块（module）下
         BufferedWriter bw = new BufferedWriter(new FileWriter("io-practice\\BufferedWriter.txt"));
 
         bw.write(97);
+        //换行
         bw.write("\r\n");
 
         bw.write("lainanizuoa");

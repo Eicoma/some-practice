@@ -9,6 +9,7 @@ public class ObjectOutputStreamTest1 {
         User user1 = new User("tangsan","123456");
 
         ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("io-practice\\user1.txt"));
+
         oos.writeObject(user1);
         oos.close();
     }
