@@ -1,4 +1,4 @@
-package eicoma.com.github.thread.practice;
+package eicoma.com.github.thread.practice1;
 
 public class Foodie extends Thread{
     @Override

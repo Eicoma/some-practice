@@ -1,4 +1,4 @@
-package eicoma.com.github.thread.practice;
+package eicoma.com.github.thread.practice1;
 
 public class Desk {
     //false表示桌子上没有鱼香肉丝，此时吃货休眠，允许厨师线程执行
