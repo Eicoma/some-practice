@@ -1,8 +1,5 @@
 package eicoma.com.github.thread.practice2;
 
-import eicoma.com.github.thread.practice1.Cooker;
-import eicoma.com.github.thread.practice1.Foodie;
-
 public class ThreadTest2 {
     public static void main(String[] args) {
         //创建Desk2类的对象，调用其空参构造方法
