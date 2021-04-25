@@ -23,6 +23,7 @@ public class Test {
         t2.setName("坦克");
         t2.setPriority(1);
         //System.out.println(t2.getPriority());
+
         // 5
         t2.start();
     }
