@@ -17,8 +17,14 @@ public class ClientDemo1 {
         byte[] byteArray = new byte[1024];
         int len = is.read(byteArray);
         String data = new String(byteArray,0,len);
-        System.out.println("客户端接收到数据" + data);
+        System.out.println("客户端接收到数据：" + data);
 
+//        InputStream is = s.getInputStream();
+//        byte[] byteArray = new byte[1024];
+//        int len;
+//        while((len = is.read(byteArray)) != -1){
+//            System.out.println("客户端接收到数据：" + new String(byteArray,0,len));
+//        }
         s.close();
     }
 }

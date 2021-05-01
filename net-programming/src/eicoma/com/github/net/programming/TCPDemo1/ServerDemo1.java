@@ -19,6 +19,12 @@ public class ServerDemo1 {
         String data = new String(byteArray,0,len);
         System.out.println("服务器端接收到：" + data);
 
+//        byte[] byteArray = new byte[1024];
+//        int len;
+//        while((len = is.read(byteArray)) != -1){
+//            System.out.println("服务器端接收到数据：" + new String(byteArray,0,len));
+//        }
+
         OutputStream os = s.getOutputStream();
         os.write("服务器已接收到请求".getBytes());
 
