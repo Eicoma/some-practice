@@ -1,0 +1,13 @@
+Socket s = new Socket("169.254.184.191",12000);
+
+        OutputStream os = s.getOutputStream();
+        os.write("客户端发送请求".getBytes());
+
+        InputStream is = s.getInputStream();
+        byte[] byteArray = new byte[1024];
+        int len = is.read(byteArray);
+
+        String data = new String(byteArray,0,len);
+        System.out.println(data);
+
+        s.close();

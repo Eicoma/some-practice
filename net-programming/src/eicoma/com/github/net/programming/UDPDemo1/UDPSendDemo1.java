@@ -16,7 +16,7 @@ public class UDPSendDemo1 {
         //static InetAddress getByName(String host) 返回该InetAddress类的对象（String host可以为主机名也可以为IP地址）
         //String getHostName() 通过InetAddress对象调用该方法，返回主机名
         //String getHostAddress() 通过InetAddress对象调用该方法，返回IP地址字符串
-//        System.out.println(InetAddress.getByName("DESKTOP-8SR48GT").getHostName() + "\n"+ InetAddress.getByName("DESKTOP-8SR48GT").getHostAddress());
+        //System.out.println(InetAddress.getByName("DESKTOP-8SR48GT").getHostName() + "\n"+ InetAddress.getByName("DESKTOP-8SR48GT").getHostAddress());
         while ((s = br.readLine())!= null){
             //当输入退出时，发送数据结束
             if(s.equals("退出")){
