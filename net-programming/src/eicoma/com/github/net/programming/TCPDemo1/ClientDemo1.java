@@ -15,7 +15,9 @@ public class ClientDemo1 {
 
         InputStream is = s.getInputStream();
         byte[] byteArray = new byte[1024];
+        //len为读取的字节的数目
         int len = is.read(byteArray);
+//        System.out.println(len);
         String data = new String(byteArray,0,len);
         System.out.println("客户端接收到数据：" + data);
 

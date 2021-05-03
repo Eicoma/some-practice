@@ -15,7 +15,9 @@ public class ServerDemo1 {
         InputStream is = s.getInputStream();
 
         byte[] byteArray = new byte[1024];
+        //len为读取的字节数目
         int len = is.read(byteArray);
+//        System.out.println(len);
         String data = new String(byteArray,0,len);
         System.out.println("服务器端接收到：" + data);
 
