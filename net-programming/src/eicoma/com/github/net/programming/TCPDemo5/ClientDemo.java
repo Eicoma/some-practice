@@ -19,6 +19,7 @@ public class ClientDemo {
         }
 
         //调用结束标签
+        //如果不调用此方法，会导致服务器端一直在等待接受数据，无法执行到将反馈数据输入到流中的那一步操作
         s.shutdownOutput();
 
         BufferedReader brc = new BufferedReader(new InputStreamReader(s.getInputStream()));
