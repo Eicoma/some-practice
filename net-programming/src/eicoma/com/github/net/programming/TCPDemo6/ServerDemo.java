@@ -1,5 +1,6 @@
 package eicoma.com.github.net.programming.TCPDemo6;
 /**
+ * TCP 客户端多线程
  * 为每一个客户端开启线程
  */
 
