@@ -33,7 +33,7 @@ public class ServerThread implements Runnable{
             }
             //反馈
             BufferedWriter bws = new BufferedWriter(new OutputStreamWriter(s.getOutputStream()));
-            bws.write("服务器端已接收到数据！");
+            bws.write("服务器端已接收到数据");
             bws.newLine();
             bws.flush();
 
