@@ -20,6 +20,8 @@ public class StudentDao {
     public void selectAll() throws IOException {
         //1.加载核心配置文件
         InputStream is = Resources.getResourceAsStream("MyBatisConfig.xml");
+        //另一种写法
+        //InputStream is = StudentDao.class.getClassLoader().getResourceAsStream("MyBatisConfig.xml");
         //2.获取SqlSession工厂对象
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(is);
         //3.通过SqlSession工厂对象获取SqlSession对象
