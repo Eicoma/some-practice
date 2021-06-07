@@ -36,5 +36,6 @@ public class Test01 {
         }
         sqlSession.close();
         is.close();
+
     }
 }
