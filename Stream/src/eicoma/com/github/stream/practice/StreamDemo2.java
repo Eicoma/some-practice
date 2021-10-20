@@ -2,7 +2,7 @@ package eicoma.com.github.stream.practice;
 /**
  * Stream流的中间操作方法之一
  * 过滤流的使用
- *
+ * <p>
  * Stream<T> filter(Predicate predicate)用于对流中的数据进行过滤
  */
 

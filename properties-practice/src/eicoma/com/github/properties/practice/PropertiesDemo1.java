@@ -5,11 +5,11 @@ import java.util.Set;
 
 /**
  * Properties介绍
- *
+ * <p>
  * - 是一个Map体系的集合类
  * - Properties可以保存到流中或从流中加载
  * - 属性列表中的每个键及其对应的值都是一个字符串
- *
+ * <p>
  * Properties集合的基本使用
  */
 
@@ -20,12 +20,12 @@ public class PropertiesDemo1 {
         Properties prop = new Properties();
 
         //存储元素到Properties集合中
-        prop.put("莱纳布朗","门之巨人");
-        prop.put("贝尔托尔特","超大巨人");
-        prop.put("阿尼","女巨");
+        prop.put("莱纳布朗", "门之巨人");
+        prop.put("贝尔托尔特", "超大巨人");
+        prop.put("阿尼", "女巨");
 
         Set<Object> set = prop.keySet();
-        for (Object key : set){
+        for (Object key : set) {
             Object value = prop.get(key);
             System.out.println(key + "," + value);
         }

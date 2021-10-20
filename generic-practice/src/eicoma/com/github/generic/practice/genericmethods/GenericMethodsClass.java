@@ -8,8 +8,8 @@ package eicoma.com.github.generic.practice.genericmethods;
 //}
 
 //进行泛型方法的定义
-public class GenericMethodsClass{
-    public <T> void show(T t){
+public class GenericMethodsClass {
+    public <T> void show(T t) {
         System.out.println(t);
     }
 }

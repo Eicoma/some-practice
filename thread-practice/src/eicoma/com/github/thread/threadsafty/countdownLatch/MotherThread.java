@@ -2,15 +2,15 @@ package eicoma.com.github.thread.threadsafty.countdownLatch;
 
 import java.util.concurrent.CountDownLatch;
 
-public class MotherThread extends Thread{
+public class MotherThread extends Thread {
     private CountDownLatch countDownLatch;
 
-    public MotherThread(CountDownLatch countDownLatch){
+    public MotherThread(CountDownLatch countDownLatch) {
         this.countDownLatch = countDownLatch;
     }
 
     @Override
-    public void run(){
+    public void run() {
         try {
             countDownLatch.await();
         } catch (InterruptedException e) {

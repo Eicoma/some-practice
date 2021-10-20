@@ -1,6 +1,6 @@
 package eicoma.com.github.thread.practice4;
 
-public class ThreadSleep implements Runnable{
+public class ThreadSleep implements Runnable {
     public void run() {
         for (int i = 0; i < 100; i++) {
             try {

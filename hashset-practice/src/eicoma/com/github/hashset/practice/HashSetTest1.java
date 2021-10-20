@@ -14,10 +14,10 @@ public class HashSetTest1 {
         HashSet<Student> hashSet = new HashSet<>();
 
         //通过重写Student类中的hashCode()和equals()方法后，重复的元素不会再添加到hashset中
-        Student stu1 = new Student("zhangsan",23);
-        Student stu2 = new Student("lisi",24);
-        Student stu3 = new Student("wangwu",24);
-        Student stu4 = new Student("wangwu",24);
+        Student stu1 = new Student("zhangsan", 23);
+        Student stu2 = new Student("lisi", 24);
+        Student stu3 = new Student("wangwu", 24);
+        Student stu4 = new Student("wangwu", 24);
 
         hashSet.add(stu1);
         hashSet.add(stu2);
@@ -27,7 +27,7 @@ public class HashSetTest1 {
 
         //迭代器打印集合元素
         Iterator<Student> iterator = hashSet.iterator();
-        while(iterator.hasNext()){
+        while (iterator.hasNext()) {
             System.out.println(iterator.next());
         }
     }

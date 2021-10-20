@@ -13,8 +13,8 @@ public interface CardMapper {
     //查询全部
     @Select("SELECT * FROM card")
     @Results({
-            @Result(column = "id",property = "id"),
-            @Result(column = "number",property = "number"),
+            @Result(column = "id", property = "id"),
+            @Result(column = "number", property = "number"),
             @Result(
                     property = "p",  //被包含对象的变量名
                     javaType = Person.class,  //被包含对象的实际数据类型

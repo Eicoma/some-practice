@@ -17,7 +17,7 @@ public class Desk2 {
     public Desk2() {
         //此处在空参构造方法内通过this关键字调用本类的带参构造方法
         //对本类的两个成员变量赋值
-        this(false,10);
+        this(false, 10);
     }
 
     public Desk2(boolean flag, int count) {

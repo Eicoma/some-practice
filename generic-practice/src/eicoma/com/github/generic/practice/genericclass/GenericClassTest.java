@@ -22,7 +22,7 @@ public class GenericClassTest {
 
         //使用迭代器遍历集合中的元素并输出
         Iterator iterator = arrayList.iterator();
-        while (iterator.hasNext()){
+        while (iterator.hasNext()) {
             System.out.println(iterator.next().toString());
         }
     }

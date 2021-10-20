@@ -14,7 +14,7 @@ public class ServerDemo {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(s.getInputStream()));
         String line;
-        while((line = br.readLine()) != null){
+        while ((line = br.readLine()) != null) {
             System.out.println(line);
         }
         //释放资源时仅关闭ServerSocket对象即可

@@ -8,13 +8,13 @@ import java.util.Map;
 
 public class MapDemo1 {
     public static void main(String[] args) {
-        Map<String,Integer> map =new HashMap<>();
+        Map<String, Integer> map = new HashMap<>();
 
         //V   put(K key,V   value)添加元素
-        map.put("qiumin",35);
-        map.put("huangjing",38);
-        map.put("tanqun",34);
-        map.put("zuozhongzhi",33);
+        map.put("qiumin", 35);
+        map.put("huangjing", 38);
+        map.put("tanqun", 34);
+        map.put("zuozhongzhi", 33);
 
         //V   put(K key,V   value)添加元素
         // V   remove(Object key)根据键删除键值对元素

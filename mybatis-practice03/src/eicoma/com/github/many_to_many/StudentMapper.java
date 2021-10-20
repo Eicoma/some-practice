@@ -12,9 +12,9 @@ public interface StudentMapper {
     //查询全部
     @Select("SELECT DISTINCT s.id,s.name,s.age FROM student s,stu_cr sc WHERE sc.sid=s.id ")
     @Results({
-            @Result(column = "id",property = "id"),
-            @Result(column = "name",property = "name"),
-            @Result(column = "age",property = "age"),
+            @Result(column = "id", property = "id"),
+            @Result(column = "name", property = "name"),
+            @Result(column = "age", property = "age"),
             @Result(
                     property = "courses",
                     javaType = List.class,

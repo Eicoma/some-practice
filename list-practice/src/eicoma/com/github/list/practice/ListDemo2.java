@@ -21,15 +21,15 @@ public class ListDemo2 {
         System.out.println(list);
 
         //添加元素到指定索引
-        list.add(0,"www");
+        list.add(0, "www");
         System.out.println(list);
 
         //更改指定索引的元素,并返回该元素
-        System.out.println(list.set(list.size()-1,"EICOMA"));
+        System.out.println(list.set(list.size() - 1, "EICOMA"));
         System.out.println(list);
 
         //返回指定索引的元素
-        System.out.println(list.get(list.size()-1));
+        System.out.println(list.get(list.size() - 1));
 
 //        Iterator<String> iterator = list.iterator();
 //        while(iterator.hasNext()){

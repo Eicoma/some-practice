@@ -32,11 +32,11 @@ public class StreamDemo1 {
 
         System.out.println("============================");
         //双列集合使用Stream生成流
-        Map<String,String> map = new HashMap<>();
+        Map<String, String> map = new HashMap<>();
 
-        map.put("qiumin","38");
-        map.put("huangjing","40");
-        map.put("zuozhongzhi","42");
+        map.put("qiumin", "38");
+        map.put("huangjing", "40");
+        map.put("zuozhongzhi", "42");
 
         map.keySet().stream().forEach(s -> System.out.println(s));
         map.values().stream().forEach(s -> System.out.println(s));
@@ -44,18 +44,18 @@ public class StreamDemo1 {
 
         System.out.println("============================");
         //数组使用Stream生成流
-        int[] array = {11,22,33,44,55,66};
+        int[] array = {11, 22, 33, 44, 55, 66};
         Arrays.stream(array).forEach(s -> System.out.println(s));
 
-        String[] array2 = {"1","2","3"};
+        String[] array2 = {"1", "2", "3"};
         Stream<String> stream1 = Arrays.stream(array2);
         stream1.forEach(s -> System.out.println(s));
 
         System.out.println("============================");
         //同种数据类型的多个数据可以通过Stream接口的静态方法of(T... values)生成流
-        Stream.of(1,2,3,4,5,6,7).forEach(s -> System.out.print(s));
+        Stream.of(1, 2, 3, 4, 5, 6, 7).forEach(s -> System.out.print(s));
         System.out.println();
-        Stream.of("1","2","3","4","5").forEach(s -> System.out.print(s));
+        Stream.of("1", "2", "3", "4", "5").forEach(s -> System.out.print(s));
 
     }
 }

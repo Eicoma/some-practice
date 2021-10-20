@@ -1,7 +1,6 @@
 package eicoma.com.github.thread.threadsafty.semaphore;
 
 
-
 public class SemaphoreTest {
 
     public static void main(String[] args) {

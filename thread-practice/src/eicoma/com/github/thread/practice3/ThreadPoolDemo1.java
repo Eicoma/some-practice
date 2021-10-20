@@ -12,13 +12,13 @@ public class ThreadPoolDemo1 {
         //Executors --- 可以帮助我们创建线程池对象
         //ExecutorService --- 可以帮助我们控制线程池
 
-        executorService.submit(()->{
+        executorService.submit(() -> {
             System.out.println(Thread.currentThread().getName() + "在执行了");
         });
 
         //Thread.sleep(2000);
 
-        executorService.submit(()->{
+        executorService.submit(() -> {
             System.out.println(Thread.currentThread().getName() + "在执行了");
         });
 

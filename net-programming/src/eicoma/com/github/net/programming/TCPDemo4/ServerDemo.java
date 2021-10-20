@@ -12,10 +12,10 @@ public class ServerDemo {
         //创建一个缓冲字符输入流对象（通过Socket对象来获取输入流）
         BufferedReader br = new BufferedReader(new InputStreamReader(s.getInputStream()));
         //创建一个缓冲字符输出流对象，输出到本模块的file.txt中
-        BufferedWriter bw = new BufferedWriter(new FileWriter("net-programming\\file2.txt",true));
+        BufferedWriter bw = new BufferedWriter(new FileWriter("net-programming\\file2.txt", true));
 
         String line;
-        while((line = br.readLine()) != null){
+        while ((line = br.readLine()) != null) {
             bw.write(line);
             bw.newLine();
             bw.flush();

@@ -7,18 +7,18 @@ import java.util.HashMap;
 
 public class HashMapDemo {
     public static void main(String[] args) throws InterruptedException {
-        HashMap<String,String> hm = new HashMap<>();
+        HashMap<String, String> hm = new HashMap<>();
 
         Thread t1 = new Thread(() -> {
             for (int i = 0; i < 25; i++) {
-                hm.put(i + "",i + "");
+                hm.put(i + "", i + "");
             }
         });
 
         Thread t2 = new Thread(
                 () -> {
                     for (int i = 25; i < 51; i++) {
-                        hm.put(i + "",i + "");
+                        hm.put(i + "", i + "");
                     }
                 });
 

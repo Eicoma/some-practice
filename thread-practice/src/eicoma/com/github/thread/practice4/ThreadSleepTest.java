@@ -1,7 +1,7 @@
 package eicoma.com.github.thread.practice4;
 
 public class ThreadSleepTest {
-    public static void main(String[] args) throws InterruptedException{
+    public static void main(String[] args) throws InterruptedException {
              /*System.out.println("睡觉前");
         Thread.sleep(3000);
         System.out.println("睡醒了");*/

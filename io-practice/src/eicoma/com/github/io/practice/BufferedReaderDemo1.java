@@ -6,11 +6,11 @@ import java.io.IOException;
 
 /**
  * BufferedReader类
- *
+ * <p>
  * 提升字符输入流的读取效率
- *
+ * <p>
  * 构造方法
- *
+ * <p>
  * BufferedReader(Reader in)创建字符缓冲输入流对象
  */
 
@@ -21,8 +21,8 @@ public class BufferedReaderDemo1 {
 
         char[] charArray = new char[1024];
         int len;
-        while((len = br.read(charArray)) != -1){
-            System.out.println(new String(charArray,0,len));
+        while ((len = br.read(charArray)) != -1) {
+            System.out.println(new String(charArray, 0, len));
         }
         br.close();
     }

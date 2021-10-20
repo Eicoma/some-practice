@@ -12,8 +12,8 @@ public interface ClassesMapper {
     //查询全部
     @Select("SELECT * FROM classes")
     @Results({
-            @Result(column = "id",property = "id"),
-            @Result(column = "name",property = "name"),
+            @Result(column = "id", property = "id"),
+            @Result(column = "name", property = "name"),
             @Result(
                     property = "students",
                     javaType = List.class,

@@ -5,7 +5,8 @@ import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
+
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -29,7 +30,7 @@ public class StudentDao {
         //4.执行映射配置文件中的sql语句，并接收结果
         List<Student> list = sqlSession.selectList("StudentMapper.selectAll");
         //5.处理结果
-        for (Student stu : list){
+        for (Student stu : list) {
             System.out.println(stu);
         }
         //6.释放资源

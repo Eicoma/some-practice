@@ -19,17 +19,17 @@ public class HashMapDemo2 {
         arrayList3.add("剑圣");
         arrayList3.add("剑神");
 
-        hashMap.put("暗天波动眼",arrayList1);
-        hashMap.put("魔狱血刹",arrayList2);
-        hashMap.put("极鬼剑术·暴风式",arrayList3);
+        hashMap.put("暗天波动眼", arrayList1);
+        hashMap.put("魔狱血刹", arrayList2);
+        hashMap.put("极鬼剑术·暴风式", arrayList3);
 
         //获取到键的集合
         Set<String> set = hashMap.keySet();
         //遍历键集合，获取到每一个键
-        for(String key : set){
+        for (String key : set) {
             System.out.println(key);
             ArrayList<String> arrayList = hashMap.get(key);
-            for(String s : arrayList){
+            for (String s : arrayList) {
                 System.out.println(s);
             }
         }

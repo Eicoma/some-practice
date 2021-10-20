@@ -26,7 +26,7 @@ public class Test01 {
         //5.调用实现类对象中的方法，接收结果
         List<User> users = mapper.selectAll();
         //6.处理结果
-        for (User user : users){
+        for (User user : users) {
             System.out.println(user);
         }
         //7.释放资源

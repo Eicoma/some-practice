@@ -16,7 +16,7 @@ public class FileInputStreamDemo2 {
 
         int byt;
         //该种读取为一次读取一个字节
-        while((byt = fis.read()) != -1){
+        while ((byt = fis.read()) != -1) {
             fos.write(byt);
         }
         fis.close();

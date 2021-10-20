@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 /**
  * 字符串中的编码解码问题
- *
+ * <p>
  * byte[] getBytes()使用默认的字符集将该 字符串编码为一系列字节并返回一个字节数组
  * byte[] getBytes(String charsetName)使用自己指定的字符集将 字符串编码为一系列字节并返回一个字节数组
  * String(byte[] bytes)使用平台的默认字符集将传入的字节数组解码来创建字符串
@@ -31,14 +31,14 @@ public class StringDemo1 {
         String name1 = new String(bytesArray1);
         System.out.println(name1);
         //输出 网易
-        String name2 = new String(bytesArray1,"GBK");
+        String name2 = new String(bytesArray1, "GBK");
         System.out.println(name2);
         //输出 缃戞槗 （乱码）
         String name3 = new String(bytesArray2);
         System.out.println(name3);
         //输出 ���� （乱码）
 
-        String name4 = new String(bytesArray2,"GBK");
+        String name4 = new String(bytesArray2, "GBK");
         System.out.println(name4);
         //输出 网易
 

@@ -30,7 +30,7 @@ public class Test01 {
         List<Card> cards = mapper.selectAll();
 
         //6.处理结果
-        for (Card card : cards){
+        for (Card card : cards) {
             System.out.println(card);
         }
 

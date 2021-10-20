@@ -6,7 +6,7 @@ import java.util.function.Consumer;
 
 /**
  * Stream流终结操作方法
- *void forEach(Consumer action)对此流的每个元素执行操作
+ * void forEach(Consumer action)对此流的每个元素执行操作
  * long count()返回此流中的元素数
  */
 

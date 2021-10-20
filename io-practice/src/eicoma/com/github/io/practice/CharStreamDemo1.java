@@ -7,11 +7,11 @@ import java.util.Arrays;
 
 /**
  * 案例需求
- *
+ * <p>
  * 使用字符缓冲流读取文件中的数据，排序后再次写到本地文件
- *
+ * <p>
  * 实现步骤
- *
+ * <p>
  * - 将文件中的数据读取到程序中
  * - 对读取到的数据进行处理
  * - 将处理后的数据添加到集合中
@@ -32,7 +32,7 @@ public class CharStreamDemo1 {
         //根据字符串数组的长度定义一个长度相同的整形数组
         int[] intArray = new int[strArray.length];
         //通过for循环遍历每一个字符串并将其类型转化为Int型并存入Int数组
-        for(int i = 0 ; i< strArray.length;i++ ){
+        for (int i = 0; i < strArray.length; i++) {
             String s = strArray[i];
             int num = Integer.parseInt(s);
             intArray[i] = num;
@@ -48,7 +48,7 @@ public class CharStreamDemo1 {
 
         //通过fot循环将int数组中的元素写入目标文件
         for (int i = 0; i < intArray.length; i++) {
-            bw.write(intArray[i] +" ");
+            bw.write(intArray[i] + " ");
         }
         bw.flush();
         bw.close();

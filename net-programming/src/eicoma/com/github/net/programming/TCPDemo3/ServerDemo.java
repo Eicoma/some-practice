@@ -15,7 +15,7 @@ public class ServerDemo {
         BufferedWriter bw = new BufferedWriter(new FileWriter("net-programming\\file.txt"));
 
         String line;
-        while((line = br.readLine()) != null){
+        while ((line = br.readLine()) != null) {
             bw.write(line);
             bw.newLine();
             bw.flush();

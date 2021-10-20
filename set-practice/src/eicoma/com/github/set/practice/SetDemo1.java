@@ -13,7 +13,7 @@ public class SetDemo1 {
         set.add("com");
 
         Iterator<String> iterator = set.iterator();
-        while(iterator.hasNext()){
+        while (iterator.hasNext()) {
             String s = iterator.next();
             System.out.print(s);
         }
@@ -21,7 +21,7 @@ public class SetDemo1 {
         System.out.println();
         System.out.println("---------------------------");
 
-        for(String s : set){
+        for (String s : set) {
             System.out.print(s);
         }
     }

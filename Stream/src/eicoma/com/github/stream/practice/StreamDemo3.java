@@ -43,11 +43,11 @@ public class StreamDemo3 {
 
         Stream stream1 = list.stream();
         Stream stream2 = list2.stream();
-        Stream.concat(stream1,stream2).forEach(s -> System.out.println(s));
+        Stream.concat(stream1, stream2).forEach(s -> System.out.println(s));
 
         //简化格式
         System.out.println("------------------------------------------");
-        Stream.concat(list.stream(),list2.stream()).forEach(s -> System.out.println(s));
+        Stream.concat(list.stream(), list2.stream()).forEach(s -> System.out.println(s));
 
         System.out.println("============================");
 //        Stream<T> distinct()返回由该流的不同元素（根据Object.equals(Object) ）组成的流

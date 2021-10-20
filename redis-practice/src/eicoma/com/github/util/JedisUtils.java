@@ -15,8 +15,9 @@ import java.util.ResourceBundle;
 public class JedisUtils {
     //声明连接池对象
     private static JedisPool pool;
+
     //读取配置文件
-    static{
+    static {
         ResourceBundle resourceBundle = ResourceBundle.getBundle("config");
         //获取服务器IP地址
         String host = resourceBundle.getString("host");
@@ -32,24 +33,26 @@ public class JedisUtils {
         config.setMaxTotal(maxTotal);
         config.setMaxIdle(maxIdle);
         //创建连接池对象
-        pool = new JedisPool(config,host,port);
+        pool = new JedisPool(config, host, port);
     }
+
     /**
      * 创建方法
      * 连接池对象，返回Jedis对象
      */
-    public static Jedis getJedis(){
+    public static Jedis getJedis() {
         return pool.getResource();
     }
+
     //释放资源方法
-    public static void close(Jedis jedis){
-        if(jedis != null){
+    public static void close(Jedis jedis) {
+        if (jedis != null) {
             jedis.close();
         }
     }
 
-    public static void close(JedisPool pool){
-        if (pool != null){
+    public static void close(JedisPool pool) {
+        if (pool != null) {
             pool.close();
         }
     }

@@ -18,8 +18,8 @@ public class BufferedDemo2 {
          */
         byte[] byteArray = new byte[1024];
         int len;
-        while((len = bis.read(byteArray)) != -1){
-            bos.write(byteArray,0,len);
+        while ((len = bis.read(byteArray)) != -1) {
+            bos.write(byteArray, 0, len);
         }
         bis.close();
         bos.close();

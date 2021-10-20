@@ -21,11 +21,11 @@ public class TreeSetTest2 {
             }
         });
 
-        Teacher teacher1 = new Teacher("qiumin",21);
-        Teacher teacher2 = new Teacher("huangjing",23);
-        Teacher teacher3 = new Teacher("zuozhongzhi",25);
-        Teacher teacher4 = new Teacher("wenhong",27);
-        Teacher teacher5 = new Teacher("tanqun",25);
+        Teacher teacher1 = new Teacher("qiumin", 21);
+        Teacher teacher2 = new Teacher("huangjing", 23);
+        Teacher teacher3 = new Teacher("zuozhongzhi", 25);
+        Teacher teacher4 = new Teacher("wenhong", 27);
+        Teacher teacher5 = new Teacher("tanqun", 25);
 
         treeSet.add(teacher1);
         treeSet.add(teacher2);
@@ -34,7 +34,7 @@ public class TreeSetTest2 {
         treeSet.add(teacher5);
 
         Iterator<Teacher> iterator = treeSet.iterator();
-        while (iterator.hasNext()){
+        while (iterator.hasNext()) {
             System.out.println(iterator.next());
             System.out.println("-------------------------------------------");
         }

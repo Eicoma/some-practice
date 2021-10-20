@@ -14,7 +14,7 @@ import java.util.List;
 
 public class Test01 {
     @Test
-    public void selectAll() throws Exception{
+    public void selectAll() throws Exception {
         InputStream is = Resources.getResourceAsStream("MybatisConfig.xml");
 
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(is);
@@ -25,10 +25,10 @@ public class Test01 {
 
         List<Classes> classes = mapper.selectAll();
 
-        for (Classes cla : classes){
+        for (Classes cla : classes) {
             System.out.println(cla.getId() + "," + cla.getName());
             List<Student> students = cla.getStudents();
-            for (Student stu : students){
+            for (Student stu : students) {
                 System.out.println("\t" + stu);
             }
         }

@@ -4,16 +4,16 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 /**
- *  需求：过滤元素并遍历集合
- *  定义一个集合，并添加一些整数1,2,3,4,5,6,7,8,9,10
- *  将集合中的奇数删除，只保留整数
- *  遍历集合得到2,4,6,8,10
- *
- *  对数据使用Stream流的方式操作完毕后,可以把流中的数据收集到集合中
- *
+ * 需求：过滤元素并遍历集合
+ * 定义一个集合，并添加一些整数1,2,3,4,5,6,7,8,9,10
+ * 将集合中的奇数删除，只保留整数
+ * 遍历集合得到2,4,6,8,10
+ * <p>
+ * 对数据使用Stream流的方式操作完毕后,可以把流中的数据收集到集合中
+ * <p>
  * public static <T> Collector toList()把元素收集到List集合中
- *  public static <T> Collector toSet()把元素收集到Set集合中
- *  public static  Collector toMap(Function keyMapper,Function valueMapper)把元素收集到Map集合中
+ * public static <T> Collector toSet()把元素收集到Set集合中
+ * public static  Collector toMap(Function keyMapper,Function valueMapper)把元素收集到Map集合中
  */
 
 public class StreamDemo6 {
@@ -34,7 +34,7 @@ public class StreamDemo6 {
         //public static <T> Collector toList()把元素收集到List集合中
         List<Integer> list1 = list.stream().filter(
                 (Integer integer) -> {
-                    return integer % 2 ==0;
+                    return integer % 2 == 0;
                 }
         ).collect(Collectors.toList());
         //简化版
@@ -71,12 +71,12 @@ public class StreamDemo6 {
         list3.add("小舞,17");
         list3.add("唐昊,48");
 
-        Map<String,String> map = list3.stream().filter(
+        Map<String, String> map = list3.stream().filter(
                 //(String s) -> {}  表示s去遍历流中的每一个数据，并在后面的{}中进行处理
                 (String s) -> {
                     String[] array = s.split(",");
                     int i = Integer.parseInt(array[1]);
-                    return i<=18;
+                    return i <= 18;
                 }
                 //此处要将toMap()方法的参数列表写清楚
         ).collect(Collectors.toMap(

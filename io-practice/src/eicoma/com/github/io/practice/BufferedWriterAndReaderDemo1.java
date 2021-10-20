@@ -4,10 +4,10 @@ import java.io.*;
 
 /**
  * 字符缓冲流的特有方法
- *
+ * <p>
  * BufferedWriter：
  * void newLine()写一行行分隔符，行分隔符字符串由系统属性定义
- *
+ * <p>
  * BufferedReader:
  * String readLine()读一行文字。 结果包含行的内容的字符串，
  * 不包括任何行终止字符如果流的结尾已经到达，则为null
@@ -33,7 +33,7 @@ public class BufferedWriterAndReaderDemo1 {
         BufferedReader br = new BufferedReader(new FileReader("io-practice\\five.txt"));
 
         String line;
-        while((line = br.readLine()) != null){
+        while ((line = br.readLine()) != null) {
             System.out.println(line);
         }
 

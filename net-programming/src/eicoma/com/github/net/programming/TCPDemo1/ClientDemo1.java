@@ -7,7 +7,7 @@ import java.net.Socket;
 
 public class ClientDemo1 {
     public static void main(String[] args) throws IOException {
-        Socket s = new Socket("169.254.184.191",12000);
+        Socket s = new Socket("169.254.184.191", 12000);
 
         OutputStream os = s.getOutputStream();
 
@@ -18,7 +18,7 @@ public class ClientDemo1 {
         //len为读取的字节的数目
         int len = is.read(byteArray);
 //        System.out.println(len);
-        String data = new String(byteArray,0,len);
+        String data = new String(byteArray, 0, len);
         System.out.println("客户端接收到数据：" + data);
 
 //        InputStream is = s.getInputStream();

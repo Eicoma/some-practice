@@ -19,7 +19,7 @@ public class ListDemo1 {
         System.out.println(list);
 
         Iterator<String> iterator = list.iterator();
-        while(iterator.hasNext()){
+        while (iterator.hasNext()) {
             String s = iterator.next();
             System.out.print(s);
         }

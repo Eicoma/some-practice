@@ -4,13 +4,13 @@ import java.io.*;
 
 /**
  * 使用字节缓冲流提升读写效率
- *
+ * <p>
  * BufferedOutputStream(OutputStream out)创建字节缓冲输出流对象
  * BufferedInputStream(InputStream in)创建字节缓冲输入流对象
  */
 
 public class BufferedDemo1 {
-    public static void main(String[] args) throws IOException{
+    public static void main(String[] args) throws IOException {
         //创建字节缓冲流对象，参数传入文件输入输出流对象
         //真正的读写依旧是字节流（文件输入输出流）
         //缓冲流使读写过程提速
@@ -26,7 +26,7 @@ public class BufferedDemo1 {
         因为内存的运行速度比硬盘要快很多！！
          */
         int b;
-        while((b = bis.read()) != -1){
+        while ((b = bis.read()) != -1) {
             bos.write(b);
         }
         bis.close();

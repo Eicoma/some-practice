@@ -2,8 +2,9 @@ package eicoma.com.github.thread.threadsafty.semaphore;
 
 import java.util.concurrent.Semaphore;
 
-public class MyRunnable implements Runnable{
+public class MyRunnable implements Runnable {
     private Semaphore semaphore = new Semaphore(2);
+
     @Override
     public void run() {
         try {

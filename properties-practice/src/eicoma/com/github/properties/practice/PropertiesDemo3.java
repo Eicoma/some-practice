@@ -7,7 +7,7 @@ import java.util.Properties;
 
 /**
  * Properties集合与IO流相结合的方法
- *
+ * <p>
  * void   load(Reader reader)从输入字符流读取属性列表（键和元素对）
  * void   store(Writer writer, String comments)将此属性列表（键和元素对）写入此   Properties表中，
  * 以适合使用   load(Reader)方法的格式写入输出字符流
@@ -25,12 +25,12 @@ public class PropertiesDemo3 {
 
         //void   store(Writer writer, String comments)
         //Properties prop2 = new Properties();
-        prop.setProperty("user1","12350");
-        prop.setProperty("user2","55565");
-        prop.setProperty("user3","54897");
+        prop.setProperty("user1", "12350");
+        prop.setProperty("user2", "55565");
+        prop.setProperty("user3", "54897");
 
         FileWriter fw = new FileWriter("properties-practice\\one.txt");
-        prop.store(fw,null);
+        prop.store(fw, null);
         fw.close();
     }
 }

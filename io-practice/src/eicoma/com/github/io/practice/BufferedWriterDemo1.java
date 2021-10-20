@@ -6,11 +6,11 @@ import java.io.IOException;
 
 /**
  * BufferedWriter类
- *
+ * <p>
  * 提升字符输出流的写入效率
- *
+ * <p>
  * 构造方法
- *
+ * <p>
  * BufferedWriter(Writer out)创建字符缓冲输出流对象
  */
 
@@ -27,20 +27,19 @@ public class BufferedWriterDemo1 {
         bw.write("\r\n");
 
         String s = "lainanizuoa";
-        bw.write(s,0,5);
+        bw.write(s, 0, 5);
         bw.write("\r\n");
 
-        char[] charArray = {97,98,99};
+        char[] charArray = {97, 98, 99};
         bw.write(charArray);
         bw.write("\r\n");
 
-        bw.write(charArray,0,2);
+        bw.write(charArray, 0, 2);
         bw.write("\r\n");
 
         bw.flush();
 
         bw.close();
-
 
 
     }

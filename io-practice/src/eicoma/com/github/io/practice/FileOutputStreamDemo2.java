@@ -31,8 +31,8 @@ public class FileOutputStreamDemo2 {
         fos.write(bys);
 
         //void write(byte[] b, int off, int len)：将字节数组指定长度的字节写入文件输出流
-        fos.write(bys,0,bys.length);
-        fos.write(bys,2,3);
+        fos.write(bys, 0, bys.length);
+        fos.write(bys, 2, 3);
 
         //关闭此文件输出流，释放资源
         fos.close();

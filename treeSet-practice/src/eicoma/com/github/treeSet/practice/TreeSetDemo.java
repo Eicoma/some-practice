@@ -29,7 +29,7 @@ public class TreeSetDemo {
         treeSet.add("qwer");
 
         Iterator iterator = treeSet.iterator();
-        while(iterator.hasNext()){
+        while (iterator.hasNext()) {
             System.out.println(iterator.next());
         }
     }
